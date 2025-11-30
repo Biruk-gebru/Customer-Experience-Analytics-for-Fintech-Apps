@@ -1,2 +1,10 @@
 google-play-scraper
 pandas
+numpy
+vaderSentiment
+spacy
+scikit-learn
+matplotlib
+seaborn
+wordcloud
+jupyter
