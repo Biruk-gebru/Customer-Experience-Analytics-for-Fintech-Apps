@@ -1,0 +1,127 @@
+================================================================================
+THEMATIC ANALYSIS REPORT
+Task 2: Sentiment and Thematic Analysis
+================================================================================
+
+Total Reviews Analyzed: 1800
+Reviews with Themes: 658 (36.6%)
+Average Themes per Review: 0.64
+
+--------------------------------------------------------------------------------
+OVERALL THEME DISTRIBUTION
+--------------------------------------------------------------------------------
+Feature Requests..................................   271 ( 15.1%)
+Transaction Performance...........................   255 ( 14.2%)
+User Interface & Experience.......................   163 (  9.1%)
+Technical Issues..................................   163 (  9.1%)
+Account Access Issues.............................   138 (  7.7%)
+Customer Support..................................    92 (  5.1%)
+Security & Privacy................................    61 (  3.4%)
+
+================================================================================
+CBE
+================================================================================
+
+Top Keywords (TF-IDF):
+  • good: 0.1538
+  • app: 0.0792
+  • best: 0.0523
+  • nice: 0.0428
+  • good app: 0.0280
+  • excellent: 0.0258
+  • ok: 0.0237
+  • cbe: 0.0231
+  • bank: 0.0216
+  • application: 0.0158
+
+Theme Distribution:
+  • Feature Requests: 66 (11.0%)
+  • Transaction Performance: 56 (9.3%)
+  • Technical Issues: 34 (5.7%)
+  • Account Access Issues: 30 (5.0%)
+  • User Interface & Experience: 28 (4.7%)
+  • Customer Support: 25 (4.2%)
+  • Security & Privacy: 11 (1.8%)
+
+Example reviews for 'Feature Requests':
+  1. "maaliif daddafee install gaafata..."
+     Rating: 3, Sentiment: neutral
+
+  36. "not allowing to transfer and showing current statement updates...."
+     Rating: 1, Sentiment: neutral
+
+  48. "ጥሩ App ነዉ ። የኔ የግል አስተያየት- Update ወይንም cache cleaning app ሲደረግ ለምንድነዉ ደግመን login ስናደርግ Restricted ሚያ..."
+     Rating: 5, Sentiment: negative
+
+
+================================================================================
+BOA
+================================================================================
+
+Top Keywords (TF-IDF):
+  • app: 0.0994
+  • good: 0.0768
+  • worst: 0.0358
+  • update: 0.0313
+  • best: 0.0275
+  • slow: 0.0261
+  • work: 0.0245
+  • bank: 0.0235
+  • time: 0.0234
+  • mobile: 0.0227
+
+Theme Distribution:
+  • Feature Requests: 110 (18.3%)
+  • Technical Issues: 85 (14.2%)
+  • Transaction Performance: 78 (13.0%)
+  • Account Access Issues: 70 (11.7%)
+  • User Interface & Experience: 33 (5.5%)
+  • Customer Support: 24 (4.0%)
+  • Security & Privacy: 16 (2.7%)
+
+Example reviews for 'Feature Requests':
+  615. "The new updates dos not work on my device what shall i do..."
+     Rating: 1, Sentiment: neutral
+
+  617. "Please update..."
+     Rating: 5, Sentiment: positive
+
+  626. "The worst banking app I've ever used! I don't need a lot of features please remove the all the mumbo..."
+     Rating: 2, Sentiment: negative
+
+
+================================================================================
+Dashen
+================================================================================
+
+Top Keywords (TF-IDF):
+  • app: 0.0906
+  • good: 0.0808
+  • best: 0.0495
+  • nice: 0.0393
+  • bank: 0.0318
+  • dashen: 0.0314
+  • super: 0.0281
+  • wow: 0.0268
+  • fast: 0.0242
+  • banking: 0.0239
+
+Theme Distribution:
+  • Transaction Performance: 121 (20.2%)
+  • User Interface & Experience: 102 (17.0%)
+  • Feature Requests: 95 (15.8%)
+  • Technical Issues: 44 (7.3%)
+  • Customer Support: 43 (7.2%)
+  • Account Access Issues: 38 (6.3%)
+  • Security & Privacy: 34 (5.7%)
+
+Example reviews for 'Transaction Performance':
+  1202. "its fast and easy to communicate to the app and its available all area keep it up.i will make Happy ..."
+     Rating: 5, Sentiment: positive
+
+  1206. "The Dashen Super App is very impressive. It is fast, easy to use, and provides smooth access to all ..."
+     Rating: 5, Sentiment: positive
+
+  1208. "bill payment options are limited in this app please add ethio telecom bill electric bill etc.. inste..."
+     Rating: 1, Sentiment: negative
+
