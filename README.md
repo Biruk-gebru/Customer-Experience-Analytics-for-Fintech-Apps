@@ -153,6 +153,60 @@ python3 scripts/load_data.py
 
 ---
 
+## Task 4: Insights and Recommendations
+
+### Methodology
+
+1. **Insights Derivation**:
+   - Analyzed sentiment and themes to identify satisfaction drivers and pain points
+   - Compared banks across key metrics (ratings, sentiment, themes)
+   - Identified 2+ drivers and pain points per bank with supporting evidence
+
+2. **Visualizations**:
+   - Created comparative visualizations using Matplotlib and Seaborn
+   - Generated plots for sentiment trends, rating distributions, and pain point analysis
+
+3. **Recommendations**:
+   - Developed actionable recommendations for each bank
+   - Addressed three scenarios: user retention, feature enhancement, and complaint management
+   - Considered ethical implications and potential biases in review data
+
+### Usage
+
+```bash
+# Run insights analysis
+python3 scripts/insights_analysis.py
+```
+
+### Outputs
+
+**Report:**
+- `insights_and_recommendations.md` - Comprehensive analysis with recommendations
+
+**Visualizations:**
+- `visualizations/avg_sentiment_by_bank.png` - Average sentiment comparison
+- `visualizations/rating_distribution_by_bank.png` - Rating distribution
+- `visualizations/pain_points_by_bank.png` - Top pain points by bank
+
+### Key Findings
+
+**Satisfaction Drivers:**
+- **CBE**: Feature richness, UI design, transaction performance
+- **BOA**: Limited positive feedback (critical concern)
+- **Dashen**: Excellent UX, fast transactions, high satisfaction
+
+**Pain Points:**
+- **CBE**: Transaction speed issues, feature gaps
+- **BOA**: Technical instability, crashes, login failures (critical)
+- **Dashen**: Limited bill payment options
+
+**Recommendations:**
+- **CBE**: Optimize transaction performance, add bill payment features
+- **BOA**: Emergency technical overhaul, fix stability issues (urgent)
+- **Dashen**: Expand bill payment options, maintain excellence
+
+---
+
 ## Project Structure
 
 ```
@@ -165,7 +219,8 @@ prod/
 ├── scripts/
 │   ├── sentiment_analysis.py
 │   ├── thematic_analysis.py
-│   └── load_data.py
+│   ├── load_data.py
+│   └── insights_analysis.py
 ├── notebooks/
 │   ├── sentiment_analysis.ipynb
 │   └── thematic_analysis.ipynb
@@ -173,11 +228,15 @@ prod/
 │   ├── sentiment_analysis.png
 │   ├── sentiment_by_bank_detailed.png
 │   ├── theme_analysis.png
-│   └── wordclouds_by_bank.png
+│   ├── wordclouds_by_bank.png
+│   ├── avg_sentiment_by_bank.png
+│   ├── rating_distribution_by_bank.png
+│   └── pain_points_by_bank.png
 ├── scrape_reviews.py
 ├── preprocess_reviews.py
 ├── requirements.txt
 ├── schema.sql
+├── insights_and_recommendations.md
 └── README.md
 ```
 
