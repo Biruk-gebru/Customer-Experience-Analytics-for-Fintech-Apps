@@ -8,3 +8,5 @@ matplotlib
 seaborn
 wordcloud
 jupyter
+psycopg2-binary
+sqlalchemy

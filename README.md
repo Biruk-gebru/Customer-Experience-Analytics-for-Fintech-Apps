@@ -106,6 +106,53 @@ jupyter notebook
 
 ---
 
+## Task 3: Store Cleaned Data in PostgreSQL
+
+### Methodology
+
+1.  **Database Setup**:
+    *   Installed PostgreSQL and created a database named `bank_reviews`.
+    *   Created a user `db_user` with appropriate permissions.
+
+2.  **Schema Design**:
+    *   **banks** table:
+        *   `bank_id` (SERIAL PRIMARY KEY)
+        *   `bank_name` (VARCHAR)
+        *   `app_name` (VARCHAR)
+    *   **reviews** table:
+        *   `review_id` (SERIAL PRIMARY KEY)
+        *   `bank_id` (INTEGER, FOREIGN KEY references banks)
+        *   `review_text` (TEXT)
+        *   `rating` (INTEGER)
+        *   `review_date` (TIMESTAMP)
+        *   `sentiment_label` (VARCHAR)
+        *   `sentiment_score` (FLOAT)
+        *   `source` (VARCHAR)
+
+3.  **Data Loading**:
+    *   Script: `scripts/load_data.py`
+    *   Connects to the PostgreSQL database using `sqlalchemy` and `psycopg2`.
+    *   Creates tables if they don't exist.
+    *   Reads cleaned data from `data/reviews_with_themes.csv`.
+    *   Populates `banks` and `reviews` tables.
+    *   Verifies data integrity by counting records.
+
+### Usage
+
+```bash
+# Ensure PostgreSQL is running and user/db are set up
+# (See scripts/load_data.py for connection details)
+
+# Run data loader
+python3 scripts/load_data.py
+```
+
+### Output
+-   PostgreSQL database `bank_reviews` populated with 1,800+ reviews.
+-   `schema.sql` - Database schema dump.
+
+---
+
 ## Project Structure
 
 ```
@@ -117,7 +164,8 @@ prod/
 │   └── reviews_with_themes.csv
 ├── scripts/
 │   ├── sentiment_analysis.py
-│   └── thematic_analysis.py
+│   ├── thematic_analysis.py
+│   └── load_data.py
 ├── notebooks/
 │   ├── sentiment_analysis.ipynb
 │   └── thematic_analysis.ipynb
@@ -129,6 +177,7 @@ prod/
 ├── scrape_reviews.py
 ├── preprocess_reviews.py
 ├── requirements.txt
+├── schema.sql
 └── README.md
 ```
 
@@ -141,6 +190,7 @@ All required dependencies are listed in `requirements.txt`:
 - spacy, scikit-learn
 - matplotlib, seaborn, wordcloud
 - jupyter
+- psycopg2-binary, sqlalchemy
 
 ## License
 
